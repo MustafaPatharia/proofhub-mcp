@@ -21,6 +21,15 @@ As a developer working with ProofHub for task management, you normally have to:
 - ✅ Extracts bug tracker links from anywhere in the task
 - ✅ Provides structured context for the AI to help you code
 
+## ⚡ Features
+
+- **🔒 Secure**: API key stored in environment variables, never in code
+- **⏱️ Rate Limit Handling**: Automatically respects ProofHub's 25 req/10s limit with retry logic
+- **🧹 HTML Cleanup**: Strips HTML tags from descriptions/comments for clean AI consumption
+- **🔗 Smart Link Extraction**: Regex patterns detect bug tracker URLs across all text fields
+- **🎯 One-Shot Tool**: `get_task_with_bug_links` fetches everything in a single call
+- **🛡️ Error Handling**: Graceful error messages with API status codes
+
 ## 🚀 Quick Start
 
 ### 1. Installation
@@ -132,17 +141,6 @@ The AI will:
 Add a comment to task 514774338823 in project 7189443252, list 270280503800:
 "Completed the API endpoint implementation. Ready for review."
 ```
-
-## ⚡ Features
-
-- **🔒 Secure**: API key stored in environment variables, never in code
-- **⏱️ Rate Limit Handling**: Automatically respects ProofHub's 25 req/10s limit with retry logic
-- **🧹 HTML Cleanup**: Strips HTML tags from descriptions/comments for clean AI consumption
-- **🔗 Smart Link Extraction**: Regex patterns detect bug tracker URLs across all text fields
-- **🎯 One-Shot Tool**: `get_task_with_bug_links` fetches everything in a single call
-- **🛡️ Error Handling**: Graceful error messages with API status codes
-
-
 ## 🤝 Contributing
 Contributions welcome! Fork the repo, make your changes, and submit a pull request.
 
