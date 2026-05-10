@@ -1,0 +1,35 @@
+{
+  "name": "proofhub-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that exposes ProofHub API v3 as tools for AI assistants (Claude, Copilot, Cursor). Fetch tasks, comments, and extract bug tracker links automatically.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proofhub",
+    "project-management",
+    "ai-assistant",
+    "claude",
+    "copilot",
+    "cursor",
+    "task-management"
+  ],
+  "author": "Mustafa Patharia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MustafaPatharia/proofhub-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MustafaPatharia/proofhub-mcp/issues"
+  },
+  "homepage": "https://github.com/MustafaPatharia/proofhub-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.15.2",
+    "dotenv": "^17.4.2"
+  }
+}
